@@ -12,7 +12,8 @@ docker run --name galaxydev -d bgruening/galaxy-stable:dev
 ## Second run test container with interactive mode
 
 ```
-docker run --name testgalaxydev  --link galaxydev:galaxy -ti --rm -v $PWD:/work manabuishii/docker-ruby-capybara-selenium-webdriver:0.1.0 /bin/bash
+docker run --name testgalaxydev  --link galaxydev:galaxy -ti --rm
+ -v $PWD:/work manabuishii/docker-ruby-capybara-selenium-webdriver:0.1.1 /bin/bash
 ```
 
 # run test inside docker image
